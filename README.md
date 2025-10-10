@@ -1,5 +1,5 @@
 ###### Author: Lahiru Abeysinghe
-##### Last update: 6th October 2025
+##### Last update: 10th October 2025
 # Step by Step guide to deploy Canonical Kubernetes on Bare metal
 
 
@@ -21,5 +21,9 @@
 
 ### This step is pretty much straight forward as no specific configurations are required when installing the OS. 
 
+### For this lab setup local-storage will be used. To provide full disk access to storage layers, the baremetal server disks are configured with RAID-0. This is completely optional, as Kubernetes in general operates on top of the underlying Linux OS and its filesystem. 
+
+## Step 01 - Setting up Bare metal servers
+### Download the Ubuntu server ISO. For this setup, Ubuntu 24.04 is latest which is available to download at [Ubuntu Downloads](https://ubuntu.com/download/server)
 ## Exclusions
 + Configuring Juju HA
